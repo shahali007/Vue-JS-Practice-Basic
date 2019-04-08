@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="home_app">
+    <h3>Mouse event : {{mouseValue}}</h3>
+    <button v-on:mouseover="mouseOver" v-on:mouseout="mouseOut" v-on:click="mouseClick">Mouse over</button>
+    <p>{{paragraph}}</p>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var homeApp = new Vue({
+        el : "#home_app",
+        data : {
+            mouseValue : '',
+            paragraph : ''
+        },
+        methods : {
+            mouseOver: function(){
+                this.mouseValue = 'Mouse over'
+            },
+            mouseOut : function () {
+                this.mouseValue = 'Mouse out'
+            },
+            mouseClick : function () {
+                this.paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur harum hic illum labore magnam quas voluptas? "
+            }
+        }
+    });
+</script>
+</body>
+</html>

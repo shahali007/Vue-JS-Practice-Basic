@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+    <style>
+        .btn{
+            background: #e3e3e3;
+            color: #fff;
+            padding: 5px;
+            border:none;
+            border-radius:30px;
+            width: 50px;
+            text-align: left;
+        }
+        .btn:focus,
+        .btn.active:focus{
+            outline:none;
+        }
+        .btn.active{
+            text-align:right;
+        }
+        .btn span{
+            width: 20px;
+            height:20px;
+            border-radius:50%;
+            background: #fff;
+            display: block;
+            float:left;
+        }
+        .btn.active span{
+            float:right;
+            background: #06cf06;
+        }
+    </style>
+</head>
+<body>
+
+<div id="home_app">
+    <h3>Toggle</h3>
+    <button class="btn" :class="{active : isActive}" @click="btnColorChange">
+        <span></span>
+    </button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var homeApp = new Vue({
+        el : "#home_app",
+        data : {
+            isActive : false
+        },
+        methods : {
+            btnColorChange: function () {
+                this.isActive = !this.isActive;
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="home_app">
+    <h3>Total Marks : {{ getFullMarks }} </h3><br>
+    <input type="number" v-model="maths" placeholder="Maths" maxlength="2">
+    <input type="number" v-model="english" placeholder="English" maxlength="2">
+    <input type="number" v-model="information" placeholder="IT" maxlength="2">
+    <hr>
+
+    First name <input type="text" v-model="firstname" placeholder="First name">
+    Last name <input type="text" v-model="lastname" placeholder="Last name">
+    <h3>Full name(Computed) : {{getFullName}}</h3>
+    <h3>Full name(Tow way binding) : {{ firstname }} {{ lastname }}</h3>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var homeApp = new Vue({
+        el : "#home_app",
+        data : {
+            vModelText : '',
+            firstname : 'Shahali',
+            lastname : 'Bogdadi',
+            maths : 0,
+            english : 0,
+            information : 0
+        },
+        methods : {
+            keypress : function (event) {
+                //alert(event.keyCode);
+                if (event.key === "Enter"){
+                    console.log("Enter clicked");
+                    alert("Enter clicked")
+                }
+            },
+            selectText : function (event) {
+                alert(event.target.innerHTML)
+            },
+            onType : function (event) {
+                //console.log(event.key.length);
+                if (event.key.length < 5){
+                    alert("Digit exceed")
+                }
+            }
+        },
+        computed : {
+            getFullName : function () {
+                return this.firstname + ' ' + this.lastname;
+            },
+            getFullMarks : function () {
+                return parseInt(this.maths) + parseInt(this.english) + parseInt(this.information)
+            }
+        }
+    });
+</script>
+</body>
+</html>

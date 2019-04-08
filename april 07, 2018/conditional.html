@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="home_app">
+    <p v-if="count == 1">This is value - {{count}}</p>
+    <p v-else-if="count == 2">This is value - {{count}}</p>
+    <p v-else-if="count == 3">This is value - {{count}}</p>
+    <p v-else-if="count == 4">This is value - {{count}}</p>
+    <p v-else>No value</p>
+    <button @click="increment">+1</button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var homeApp = new Vue({
+        el : "#home_app",
+        data : {
+            welcome : "Welcome to practice vue!",
+            count : 0
+        },
+        methods : {
+            increment : function () {
+                this.count ++;
+            }
+        }
+    });
+</script>
+</body>
+</html>

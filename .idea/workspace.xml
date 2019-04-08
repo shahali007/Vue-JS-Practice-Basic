@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f0179cb-ffe5-4e9e-8bf5-4884923bc9da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/3.methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.first-program.html" beforeDir="false" afterPath="$PROJECT_DIR$/2.first-program.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.data-binding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5.event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.mouse-move-over-out.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/3.methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +18,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="3.methods.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3.methods.html">
+      <file leaf-file-name="6.mouse-move-over-out.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/6.mouse-move-over-out.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="467">
+              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+              <folding>
+                <element signature="e#612#618#0" expanded="true" />
+                <element signature="e#618#624#0" expanded="true" />
+                <element signature="e#624#630#0" expanded="true" />
+                <element signature="e#673#679#0" expanded="true" />
+                <element signature="e#679#685#0" expanded="true" />
+                <element signature="e#685#691#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,10 +54,14 @@
         <option value="$PROJECT_DIR$/component.html" />
         <option value="$PROJECT_DIR$/computed-set-get.html" />
         <option value="$PROJECT_DIR$/reference.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/2.first-program.html" />
+        <option value="$PROJECT_DIR$/3.methods.html" />
+        <option value="$PROJECT_DIR$/4.data-binding.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/5.event.html" />
+        <option value="$PROJECT_DIR$/6.mouse-move-over-out.html" />
       </list>
     </option>
   </component>
@@ -124,18 +140,18 @@
       <option name="presentableId" value="Default" />
       <updated>1554605226179</updated>
       <workItem from="1554605227505" duration="23887000" />
-      <workItem from="1554691380418" duration="1410000" />
+      <workItem from="1554691380418" duration="9459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25297000" />
+    <option name="totallyTimeSpent" value="33346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16912752" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16912752" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -191,31 +207,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/april 07, 2018/conditional.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/april 07, 2018/events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/april 07, 2018/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/april 07, 2018/keymodifiers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -271,13 +266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.first-program.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -287,8 +275,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3.methods.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="280">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.data-binding.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5.event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/april 07, 2018/keymodifiers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/april 07, 2018/conditional.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/april 07, 2018/events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.mouse-move-over-out.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+          <folding>
+            <element signature="e#612#618#0" expanded="true" />
+            <element signature="e#618#624#0" expanded="true" />
+            <element signature="e#624#630#0" expanded="true" />
+            <element signature="e#673#679#0" expanded="true" />
+            <element signature="e#679#685#0" expanded="true" />
+            <element signature="e#685#691#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

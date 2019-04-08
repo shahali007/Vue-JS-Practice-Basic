@@ -5,17 +5,49 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue | Practice</title>
+    <style>
+        .btn{
+            background: orange;
+            color: #fff;
+            padding: 10px 25px;
+            border:none;
+            cursor: pointer;
+        }
+        .btn.active{
+            background: green;
+        }
+        .btn:focus{
+            outline : none;
+        }
+    </style>
 </head>
 <body>
 
 <div id="app">
-
+    <h1>{{heading}}</h1>
+    <hr>
+    <button @click="toggleClick" class="btn" :class="{active : isActive}">Orange</button>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
     let app = new Vue({
-        el : "#app"
+        el: "#app",
+        data: {
+            heading : "Method",
+            isActive : false
+        },
+        methods : {
+            toggleClick (event){
+                this.isActive = !this.isActive;
+                if(!this.isActive ){
+                    event.target.innerHTML = "Orange"
+                }
+                if(this.isActive ){
+                    event.target.innerHTML = "Green"
+                }
+            }
+        }
     });
 </script>
 </body>

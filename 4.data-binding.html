@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1>{{ heading }}</h1>
+        <hr>
+        <h3>v-bind:href</h3>
+        <ul>
+            <li><a :href="youtubeLink">Youtube</a></li>
+            <li><a :href="facebookLink">Facebook</a></li>
+            <li><a :href="vueJsLink">Vue JS</a></li>
+            <li><a :href="twitterLink">Twitter</a></li>
+        </ul>
+        <hr>
+        <h3>v-text</h3>
+        <div v-text="htmlText"></div>
+        <hr>
+        <h3>v-html</h3>
+        <div v-html="htmlText"></div>
+        <hr>
+        <h3>v-bind:value</h3>
+        Your name <input type="text" :value="txtName"><br>
+        Your email <input type="email" :value="txtEmail">
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading         : "Data binding",
+            youtubeLink     : "https://www.youtube.com",
+            facebookLink    : "https://www.facebook.com",
+            vueJsLink       : "https://vuejs.org",
+            twitterLink     : "https://twitter.com",
+            txtName         : "Shahali Bogdadi",
+            txtEmail        : "email@email.com",
+            htmlText           : "<p>Lorem ipsum dolor sit amet, <span style='color:orange'>consectetur</span> adipisicing elit. Libero, nesciunt, perferendis. Distinctio fugiat nemo reiciendis.Lorem ipsum dolor sit amet.</p>",
+            socialMedia : [
+                {
+                    name : "Facebook",
+                    url : "https://www.facebook.com"
+                },
+                {
+                    name : "Youtube",
+                    url : "https://www.youtube.com"
+                },
+                {
+                    name : "Vue JS",
+                    url : "https://vuejs.org"
+                },
+                {
+                    name : "Twitter",
+                    url : "https://twitter.com"
+                }
+            ]
+        }
+    });
+</script>
+</body>
+</html>

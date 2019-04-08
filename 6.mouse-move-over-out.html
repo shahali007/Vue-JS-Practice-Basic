@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+    <style>
+        .mouse-move{
+            width: 300px;
+            height: 200px;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    <hr>
+    <h4>Mouse move</h4>
+    <div class="mouse-move" @mousemove="mouseMove"></div>
+    <p>Top : {{ offsetY }} &nbsp;&nbsp;&nbsp;Left : {{ offsetX }}</p>
+    <p>Box height : {{ elementHeight }} &nbsp;&nbsp;&nbsp; Box width : {{ elementWidth }}</p>
+    <hr>
+    <h4>Mouse out</h4>
+    <button @mouseout="mouseOut">Mouse out from here...</button>
+    <div>{{mouseOutTxt}}</div>
+    <hr>
+    <h4>Mouse over</h4>
+    <button @mouseover="mouseOver">Mouse Over</button>
+    <div>{{mouseOverTxt}}</div>
+    <hr>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading : "Mouse move, Mouse out, Mouse over",
+            offsetX : 0,
+            offsetY : 0,
+            elementHeight : 0,
+            elementWidth : 0,
+            mouseOutTxt : '',
+            mouseOverTxt : '',
+        },
+        methods : {
+            mouseMove : function (event) {
+                console.log(event.target.clientHeight, event.target.clientWidth);
+                this.offsetX = event.offsetX;
+                this.offsetY = event.offsetY;
+                this.elementHeight = event.target.clientHeight+"px";
+                this.elementWidth = event.target.clientWidth+"px";
+            },
+            mouseOut : function () {
+                this.mouseOutTxt = "Successfully! Mouse out!"
+            },
+            mouseOver : function () {
+                this.mouseOverTxt = "Successfully! Mouse Over!"
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    <hr>
+    <h3>v-on:click - <br> <small>Counter : {{ counter }}</small></h3>
+    <button @click="counterUp(1)">+1</button>
+    <button @click="counterDown(1)">-1</button>
+
+    <h4>v-on:dblclick</h4>
+    <button @dblclick="counterUp(5)">+5</button>
+    <button @dblclick="counterDown(5)">-5</button>
+    <hr>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading : "Event handling",
+            counter : 0
+        },
+        methods : {
+            counterUp : function(data){
+                this.counter +=data;
+            },
+            counterDown : function(data){
+                this.counter -=data;
+            }
+        }
+    });
+</script>
+</body>
+</html>

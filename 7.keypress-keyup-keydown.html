@@ -11,6 +11,15 @@
 <div id="app">
     <h1>{{heading}}</h1>
     <hr>
+    <h4>Key Press</h4>
+    <input type="text" placeholder="Type..." @keypress="keyPress">
+    <hr>
+    <h4>Key UP</h4>
+    <input type="text" placeholder="Type..." @keyup="keyUp">
+    <hr>
+    <h4>Key Down</h4>
+    <input type="text" placeholder="Type..." @keydown="keyDown">
+    <hr>
 
 </div>
 
@@ -20,6 +29,18 @@
         el : "#app",
         data : {
             heading : "Keypress, keyup, keydown"
+        },
+        methods : {
+            keyPress : function (event){
+                alert(event.key);
+                console.log(event);
+            },
+            keyUp : function () {
+                alert("Key up");
+            },
+            keyDown : function () {
+                alert("Key Down");
+            }
         }
     });
 </script>

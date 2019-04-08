@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    <hr>
+    <h3>keyup.ctrl</h3>
+    <small>ctrl+shift</small>
+    <input type="text" @keyup.ctrl="keyupCtrl">
+    <hr>
+    <h3>keyup.enter</h3>
+    <input type="text" @keyup.enter="keyupEnter">
+    <hr>
+    <h3>keyup.alt.enter</h3>
+    <input type="text" @keyup.alt.enter="keyupAltEnter">
+    <hr>
+    <h3>keyup.delete</h3>
+    <input type="text" @keyup.delete="keyupDelete">
+    <hr>
+    <h3>keyup.space</h3>
+    <input type="text" @keyup.space="keyupSpace">
+    <hr>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading : "Key Modifiers -enter, alt, ctrl, delete, space"
+        },
+        methods : {
+            keyupCtrl : function () {
+                console.log(event.target.value);
+            },
+            keyupEnter : function () {
+                console.log(event.target.value);
+            },
+            keyupAltEnter : function () {
+                console.log(event.target.value);
+            },
+            keyupAltEnter : function () {
+                console.log(event.target.value);
+            },
+            keyupDelete : function () {
+                console.log(event.target.value);
+            },
+            keyupSpace : function () {
+                console.log(event.target.value);
+            }
+        }
+    });
+</script>
+</body>
+</html>

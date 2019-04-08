@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    <hr>
+    <h3>.once </h3>
+    <div><em>This event will fire only one time</em><br>Counter : {{ counter }}</div>
+
+    <button @click="increment">+1</button>
+    <hr>
+    <h3>.prevent</h3>
+    <form action="" @submit.prevent="onSubmit">
+        <input type="text" ref="txtName">
+        <button>Submit</button>
+    </form>
+    <div>
+        <em>{{ txtInputName }}</em>
+    </div>
+    <hr>
+    <h3>.stop</h3>
+    <div @click="stopClick">
+        <button @click.stop="stopClick">Stop click</button>
+    </div>
+    <hr>
+    <h3>.capture</h3>
+    <div @click="parentClick">
+        <button @click="childClick">Click</button>
+    </div>
+    <br>
+    <div @click.capture="parentClick">
+        <button @click="childClick">Capture Click</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading : "Event modifier - Once, Prevent, Stop, Capture",
+            txtInputName : '',
+            counter : 0
+        },
+        methods : {
+            increment : function(){
+                this.counter +=1;
+            },
+            onSubmit : function (event) {
+                //console.log(this.txtInput);
+                //console.log(event);
+                console.log(this.$refs.txtName.value);
+                this.txtInputName = this.$refs.txtName.value;
+                this.$refs.txtName.value = ""
+            },
+            stopClick : function () {
+                console.log(event)
+            },
+            parentClick : function () {
+                console.log("Parenr click...")
+            },
+            childClick : function () {
+                console.log("Child click...")
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f0179cb-ffe5-4e9e-8bf5-4884923bc9da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/4.data-binding.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.event.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6.mouse-move-over-out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.v-model.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.event-modifier-once-prevent-stop-capture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.key-enter-alt-ctrl-delete-space.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/3.methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.keypress-keyup-keydown.html" beforeDir="false" afterPath="$PROJECT_DIR$/7.keypress-keyup-keydown.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,19 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="6.mouse-move-over-out.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/6.mouse-move-over-out.html">
+      <file leaf-file-name="9.key-enter-alt-ctrl-delete-space.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/9.key-enter-alt-ctrl-delete-space.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-              <folding>
-                <element signature="e#612#618#0" expanded="true" />
-                <element signature="e#618#624#0" expanded="true" />
-                <element signature="e#624#630#0" expanded="true" />
-                <element signature="e#673#679#0" expanded="true" />
-                <element signature="e#679#685#0" expanded="true" />
-                <element signature="e#685#691#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="382">
+              <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.v-model.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10.v-model.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -55,13 +56,17 @@
         <option value="$PROJECT_DIR$/computed-set-get.html" />
         <option value="$PROJECT_DIR$/reference.html" />
         <option value="$PROJECT_DIR$/.gitignore/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/2.first-program.html" />
         <option value="$PROJECT_DIR$/3.methods.html" />
         <option value="$PROJECT_DIR$/4.data-binding.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/5.event.html" />
         <option value="$PROJECT_DIR$/6.mouse-move-over-out.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/7.keypress-keyup-keydown.html" />
+        <option value="$PROJECT_DIR$/8.event-modifier-once-prevent-stop-capture.html" />
+        <option value="$PROJECT_DIR$/9.key-enter-alt-ctrl-delete-space.html" />
+        <option value="$PROJECT_DIR$/1.0.v-model.html" />
       </list>
     </option>
   </component>
@@ -78,9 +83,9 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-70" />
-    <option name="y" value="110" />
-    <option name="width" value="1940" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1935" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -140,12 +145,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554605226179</updated>
       <workItem from="1554605227505" duration="23887000" />
-      <workItem from="1554691380418" duration="9459000" />
+      <workItem from="1554691380418" duration="19269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33346000" />
+    <option name="totallyTimeSpent" value="43156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -238,13 +243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/april 07, 2018/reference.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/april 07, 2018/computed-set-get.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -256,13 +254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -325,6 +316,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/8.event-modifier-once-prevent-stop-capture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.keypress-keyup-keydown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/6.mouse-move-over-out.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -337,6 +342,44 @@
             <element signature="e#679#685#0" expanded="true" />
             <element signature="e#685#691#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/april 07, 2018/reference.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="5" column="2104" selection-start-line="5" selection-start-column="2104" selection-end-line="5" selection-end-column="2104" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9.key-enter-alt-ctrl-delete-space.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10.v-model.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
         </state>
       </provider>
     </entry>

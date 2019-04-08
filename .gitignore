@@ -2,6 +2,7 @@
 node_modules
 april 07, 2018
 /dist
+.idea
 
 # local env files
 .env.local

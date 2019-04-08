@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .border{
+            border:1px solid #333;
+            padding:15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="app_event">
+    <h2>Increment/decrement on click : {{counter}}</h2>
+    <p v-if="error">{{error}}</p>
+    <button v-on:click="increment(1)"> &plus; 1</button>
+    <button v-on:click="decrement(1)"> &minus; 1</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button v-on:click="increment(5)"> &plus; 5</button>
+    <button v-on:click="decrement(5)"> &minus; 5</button>
+    <hr>
+
+    <div class="border">
+        <h2>Mouse move here...</h2>
+        <img v-on:mousemove="mouseMove" src="https://paloimages.prothom-alo.com/contents/cache/images/0x270x1/uploads/media/2019/04/06/bbaa2cdc8e3b044c59555de9e1bba58e-5ca85b71b0dcb.jpg" alt="" style="max-width:100%;">
+    </div>
+    <p v-if="mouseEv">
+        x pointer : {{mouseEv.offsetX}} <br> y pointer : {{mouseEv.offsetY}} <br>
+        Element height : {{mouseEv.srcElement.clientHeight}} <br> Element width : {{mouseEv.srcElement.clientWidth}} <br>
+    </p>
+    <hr>
+
+    <div class="border" v-on:mouseover="mouseOver" v-on:mouseout="mouserOv : 'Hover Me!'">
+        <h3>Mouse over here...</h3>
+        <p>{{mouserOv}}</p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el : "#app_event",
+        data : {
+            counter : 0,
+            error : '',
+            mouseEv : '',
+            mouserOv : 'Hover Me!'
+        },
+        methods : {
+            increment(val){
+                this.counter += val;
+                this.error = ''
+            },
+            decrement(val){
+                this.counter < 1 ? this.error ="Quantity couldn't be less than 0" : this.counter -= val;
+            },
+            mouseMove(event){
+                console.log(event);
+                this.mouseEv = event;
+            },
+            mouseOver(){
+                this.mouserOv = "Hei! You mouse overed!";
+            }
+        }
+    });
+</script>
+</body>
+</html>

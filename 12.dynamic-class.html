@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+    <style>
+        .btn{background:orange;color:#fff;padding:10px 25px;border:none;}
+        .btn.active{background:green;}
+        .btn:focus{outline:none;}
+        .d-flex{display:flex;justify-content: space-between}
+        .settings{cursor:pointer;}
+        .settings div span{background:#e6e6e6;height:15px;width:15px;border-radius:50%;display:block}
+        .settings.active div span{background:green;}
+        .settings.active span{color: #029d02;}
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    <hr>
+    <button class="btn" @click="toggleClick" :class="{active : isActive}">Orange</button>
+    <hr>
+    <br>
+    <h3>App permission</h3>
+    <div class="d-flex settings" @click="toggleChrome" :class="{active : isActiveChrome}">
+        <span>Chrome</span>
+        <div>
+            <span></span>
+        </div>
+    </div>
+    <hr>
+    <div class="d-flex settings" @click="toggleFirefox" :class="{active : isActiveFirefox}">
+        <span>Firefox</span>
+        <div>
+            <span></span>
+        </div>
+    </div>
+    <hr>
+    <div class="d-flex settings" @click="toggleFacebook" :class="{active : isActiveFacebook}">
+        <span>Facebook</span>
+        <div>
+            <span></span>
+        </div>
+    </div>
+    <hr>
+    <div class="d-flex settings" @click="toggleWeather" :class="{active : isActiveWeather}">
+        <span>Weather</span>
+        <div>
+            <span></span>
+        </div>
+    </div>
+    <hr>
+    <div class="d-flex settings" @click="toggleMap" :class="{active : isActiveMap}">
+        <span>Google map</span>
+        <div>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading             : "Dynamic classes",
+            isActive            : false,
+            isActiveChrome      : false,
+            isActiveFirefox     : false,
+            isActiveFacebook    : true,
+            isActiveWeather     : false,
+            isActiveMap         : false
+        },
+        methods : {
+            toggleClick : function (event) {
+                this.isActive = !this.isActive;
+                this.isActive ? event.target.innerHTML = "Green" : event.target.innerHTML = "Orange";
+            },
+            toggleChrome    : function () {this.isActiveChrome = !this.isActiveChrome;},
+            toggleFirefox   : function () {this.isActiveFirefox = !this.isActiveFirefox;},
+            toggleFacebook  : function () {this.isActiveFacebook = !this.isActiveFacebook;},
+            toggleWeather   : function () {this.isActiveWeather = !this.isActiveWeather;},
+            toggleMap       : function () {this.isActiveMap = !this.isActiveMap;}
+        }
+    });
+</script>
+</body>
+</html>

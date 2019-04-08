@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    <hr>
+    First name <input type="text" v-model="firstname"><br>
+    Last name <input type="text" v-model="lastname"><br>
+    <br>
+    Full name : {{ getFullName }}
+    <br>
+    <h3>Marks : {{ totalMarks }}</h3>
+    Mathe <input type="text" v-model="mathe" maxlength="2">  <button @click="mathe -= 1">-1</button><button @click.prevent="mathe += 1">+1</button>
+    <br>
+    English <input type="text" v-model="english"> <button @click="english += 1">+1</button> <button @click="english -= 1">-1</button>
+    <br>
+    Science <input type="text" v-model="science"> <button @click="science += 1">+1</button> <button @click="science -= 1">-1</button>
+    <br>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading     : "Computed",
+            firstname   : '',
+            lastname    : '',
+            mathe       : null,
+            english     : null,
+            science     : null
+        },
+        methods : {
+
+        },
+        computed : {
+            getFullName : function () {
+                return this.firstname + '' + this.lastname;
+            },
+            totalMarks : function () {
+                return parseInt(this.mathe) + parseInt(this.english) + parseInt(this.science);
+            }
+        }
+    });
+</script>
+</body>
+</html>

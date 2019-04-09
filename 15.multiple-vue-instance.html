@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    {{ getData() }} <br>
+    From another app : {{ thirdMethod() }}
+    <hr>
+</div>
+<div id="another_app">
+    <h1>{{heading}}</h1>
+    {{ getData() }}
+    <hr>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    let anotherApp = new Vue({
+        el : "#another_app",
+        data : {
+            heading : "Multiple VueJS Instances"
+        },
+        methods : {
+            getData : function () {
+                return "another app method"
+            },
+
+        }
+    });
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading : anotherApp.heading,
+        },
+        methods : {
+            getData : function () {
+                return "app method"
+            },
+            thirdMethod : function () {
+                return anotherApp.getData()
+            }
+        }
+    });
+</script>
+</body>
+</html>

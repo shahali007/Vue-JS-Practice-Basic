@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    <hr>
+    <form action="" @submit.prevent="onSubmit">
+        First name <input type="text" ref="firstname"><br>
+        Last name  <input type="text" ref="lastname"><br>
+        <p ref="paratext">Inside tag text is InnerHTML text.</p>
+        <button>Submit</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading : "Referencing in VueJs using $refs"
+        },
+        methods : {
+            onSubmit : function(){
+                console.log(this.$refs.firstname.value);
+                console.log(this.$refs.lastname.value);
+                console.log(this.$refs.paratext.innerHTML);
+            }
+        }
+    });
+</script>
+</body>
+</html>

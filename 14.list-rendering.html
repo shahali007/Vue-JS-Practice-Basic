@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue | Practice</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{heading}}</h1>
+    <hr>
+    <h4>Friends information</h4>
+    <ul>
+        <li v-for="friend in friends">
+            Name : {{ friend.name }} <br>
+            Age : {{ friend.age }} <br>
+            City : {{ friend.place.city }} <br>
+            Street : {{ friend.place.street }} <br>
+            Country : {{ friend.place.country }} <br>
+        </li>
+    </ul>
+
+    <br>
+    <h4>With index</h4>
+    <ul>
+        <li v-for="(item, index) in items">{{ index+1 }} - {{ item }}</li>
+    </ul>
+
+    <br>
+    <h4>With range condition</h4>
+    <ul>
+        <li v-for="(item, index) in items" v-if="index >= 5 && index < 8">{{ index+1 }} - {{ item }}</li>
+    </ul>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el : "#app",
+        data : {
+            heading : "List rendering",
+            items : [
+                'ONE',
+                'TWO',
+                'THREE',
+                'FOUR',
+                'FIVE',
+                'SIX',
+                'SEVEN',
+                'EIGHT',
+                'NINE',
+                'TEN',
+                'ELEVEN',
+                'TWELVE',
+                'THIRTEEN'
+            ],
+            friends : [
+                {name : 'rasel', age : 28, place : {city : 'abc', street : '5/A', country : "malaysia"}},
+                {name : 'helal', age : 29, place : {city : 'sdf', street : 'hrdd', country : "singapore"}},
+                {name : 'kayum', age : 27, place : {city : 'nurbah', street : 'N/A', country : "bangladesh"}},
+                {name : 'saiful', age : 28, place : {city : 'potenga', street : 'sea beach road', country : "bangladesh"}},
+                {name : 'alamin', age : 30, place : {city : 'riyadh', street : '94/B', country : "soudi arab"}},
+            ]
+        }
+    });
+</script>
+</body>
+</html>
